@@ -11,7 +11,7 @@
 
 #reading a csv file
 #setting header to false avoids the first data being set as header name
-a=read.csv("Website.csv", header = F)
+a=read.csv("Websites.csv", header = F)
 #returns the number of unique data items
 #because V1 is the column name (recall data-frames)
 unique(a$V1)

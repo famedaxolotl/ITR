@@ -10,6 +10,7 @@ a/2
 #..etc
 
 a=c(18,4,1,2,3,8) #initialize a new vector
+#in a vector, all elements must be of the same type
 
 min(a) # gets min value
 max(a) # gets max value
