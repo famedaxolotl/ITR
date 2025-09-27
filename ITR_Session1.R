@@ -24,7 +24,7 @@ b
 a[2:5] #prints elements 2 to 5
 a[-2] # drops 2nd element of a
 a[-c(2,4)] # drops multiple elements
-a[5:6] #drops 5 to 6
+a[-(5:6)] #drops 5 to 6 in a range
 
 x= c(99,98,97,96,95,94,93) # new vector for examples
 x
@@ -34,7 +34,7 @@ which(x==max(x)) #gets index of max value in x
 
 #gets 2nd highest value in x
 y=sort(x, decreasing = T)
-which(a==d[2])
+which(x==y[2])
 
 # accessing an element which does not exist gives 'NA' error
 
@@ -45,7 +45,9 @@ seq(1, 5, by=2) #jumps 2 steps, default value by=1, prints 1,3,5
 
 #returns eleven 1s
 p=seq(1,11, by=1)
+p
 q=seq(1,11, by=1)
+q
 p/q
 
 # does the same thing
@@ -54,4 +56,3 @@ rep(1,11)
 # returns 1 1 1 5 5
 b=c(rep(1,3), rep(5,2))
 b
-

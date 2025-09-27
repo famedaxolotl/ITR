@@ -2,11 +2,12 @@
 
 #initializing a matrix (3R, 2C)
 #elements are positioned column-wise by default
-a=matrix(seq(1:6), nrow=3, ncol=2)
+a=matrix((1:6), nrow=3, ncol=2)
+a
 
 #matrix with elements positioned row-wise
 a=matrix(seq(1:6), nrow=3, ncol=2, byrow = T)
-
+a
 #extracts 1st column
 a[,1]
 #extracts 1st row
@@ -22,10 +23,10 @@ rbind(c(10,11),a)
 #binds colummn to end of a
 cbind(a, c(4,2,1))
 
-
 #new vector for examples
 b=matrix(seq(1:6), nrow=3, ncol=2, byrow = T)
 b=cbind(b, c(4,2,1))
+b
 is.vector(b[2,]) #TRUE
 is.vector(b) #FALSE
 
@@ -35,16 +36,17 @@ b
 
 #transpose b (assigned to c)
 c=t(b)
+c
 
 c=cbind(c, c(2,5,1))
 
-#assign column names to maxtrix c
+c#assign column names to maxtrix c
 colnames(c)=c("Aragorn", "Gil-Galad", "Melkor", "Smeagol")
 rownames(c)=c("History", "Geography", "Lore")
 c
 
 #Use quotations when printing a named column
-c[,'Aragorn']
+c[,"Aragorn"]
 
 #convert matrix c to dataframe
 c_df=as.data.frame(c)
